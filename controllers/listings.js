@@ -29,7 +29,7 @@ module.exports.showListing = async (req, res) => {
 
 module.exports.createListing = async (req, res, next) => {
   const { location } = req.body.listing;
-  const apiKey = "AlzaSyXuhJV5ceQLkB5obiUHpVNCLGcyNW0bKOF"; // Replace with your API key
+  const apiKey = "YOUR APT KEY"; // Replace with your API key
   const geocodeUrl = `https://maps.gomaps.pro/maps/api/geocode/json?address=${encodeURIComponent(
     location
   )}&key=${apiKey}`;
